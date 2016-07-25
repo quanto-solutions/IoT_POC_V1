@@ -125,7 +125,7 @@
 		<semantic:sendEmailAction>
 			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
 		</semantic:sendEmailAction>
-
+		
 		<!-- we instantiate the fragment in the controller now
 		<semantic:dependents>
 			<ResponsivePopover title="{i18n>dimensionsTitle}"
