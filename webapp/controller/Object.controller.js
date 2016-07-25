@@ -1,9 +1,9 @@
 /*global location*/
 sap.ui.define([
-		"opensap/manageproducts/controller/BaseController",
+		"quanto/iotpocv1/controller/BaseController",
 		"sap/ui/model/json/JSONModel",
 		"sap/ui/core/routing/History",
-		"opensap/manageproducts/model/formatter"
+		"quanto/iotpocv1/model/formatter"
 	], function (
 		BaseController,
 		JSONModel,
@@ -12,7 +12,7 @@ sap.ui.define([
 	) {
 		"use strict";
 
-		return BaseController.extend("opensap.manageproducts.controller.Object", {
+		return BaseController.extend("quanto.iotpocv1.controller.Object", {
 
 			formatter: formatter,
 
@@ -88,7 +88,7 @@ sap.ui.define([
 			_getPopover : function () {
 				// create dialog lazily via fragment factory
 				if (!this._oPopover) {
-					this._oPopover = sap.ui.xmlfragment("opensap.manageproducts.view.DetailPopover", this);
+					this._oPopover = sap.ui.xmlfragment("quanto.iotpocv1.view.DetailPopover", this);
 					this.getView().addDependent(this._oPopover);
 				}
 				return this._oPopover;

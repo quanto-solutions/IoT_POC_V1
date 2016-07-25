@@ -4,7 +4,7 @@ sap.ui.define([
 		"use strict";
 
 		function getFrameUrl (sHash, sUrlParameters) {
-			var sUrl = jQuery.sap.getResourcePath("opensap/manageproducts/app", ".html");
+			var sUrl = jQuery.sap.getResourcePath("quanto/iotpocv1/app", ".html");
 			sUrlParameters = sUrlParameters ? "?" + sUrlParameters : "";
 
 			if (sHash) {
@@ -16,7 +16,7 @@ sap.ui.define([
 			return sUrl + sUrlParameters + sHash;
 		}
 
-		return Opa5.extend("opensap.manageproducts.test.integration.pages.Common", {
+		return Opa5.extend("quanto.iotpocv1.test.integration.pages.Common", {
 
 			iStartMyApp : function (oOptions) {
 				var sUrlParameters;
@@ -60,7 +60,7 @@ sap.ui.define([
 
 			getMockServer : function () {
 				return new Promise(function (success) {
-					Opa5.getWindow().sap.ui.require(["opensap/manageproducts/localService/mockserver"], function (mockserver) {
+					Opa5.getWindow().sap.ui.require(["quanto/iotpocv1/localService/mockserver"], function (mockserver) {
 						success(mockserver.getMockServer());
 					});
 				});

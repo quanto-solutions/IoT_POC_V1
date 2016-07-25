@@ -1,9 +1,9 @@
 sap.ui.define([
-		"opensap/manageproducts/controller/BaseController"
+		"quanto/iotpocv1/controller/BaseController"
 	], function (BaseController) {
 		"use strict";
 
-		return BaseController.extend("opensap.manageproducts.controller.NotFound", {
+		return BaseController.extend("quanto.iotpocv1.controller.NotFound", {
 
 			/**
 			 * Navigates to the worklist when the link is pressed

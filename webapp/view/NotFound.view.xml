@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="opensap.manageproducts.controller.NotFound"
+	controllerName="quanto.iotpocv1.controller.NotFound"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m">
 

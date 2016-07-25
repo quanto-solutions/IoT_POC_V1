@@ -1,6 +1,6 @@
 sap.ui.define([
 		"sap/ui/test/Opa5",
-		"opensap/manageproducts/test/integration/pages/Common"
+		"quanto/iotpocv1/test/integration/pages/Common"
 	], function(Opa5, Common) {
 		"use strict";
 

@@ -5,5 +5,10 @@
     "defaultLanguage": "",
     "defaultI18NPropertyFile": "",
     "resourceModelName": ""
+  },
+  "hcpdeploy": {
+    "account": "s0015485288trial",
+    "name": "iotpocv1",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }

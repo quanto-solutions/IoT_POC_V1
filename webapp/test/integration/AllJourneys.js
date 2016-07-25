@@ -5,25 +5,25 @@ QUnit.config.autostart = false;
 
 sap.ui.require([
 		"sap/ui/test/Opa5",
-		"opensap/manageproducts/test/integration/pages/Common",
+		"quanto/iotpocv1/test/integration/pages/Common",
 		"sap/ui/test/opaQunit",
-		"opensap/manageproducts/test/integration/pages/Worklist",
-		"opensap/manageproducts/test/integration/pages/Object",
-		"opensap/manageproducts/test/integration/pages/NotFound",
-		"opensap/manageproducts/test/integration/pages/Browser",
-		"opensap/manageproducts/test/integration/pages/App"
+		"quanto/iotpocv1/test/integration/pages/Worklist",
+		"quanto/iotpocv1/test/integration/pages/Object",
+		"quanto/iotpocv1/test/integration/pages/NotFound",
+		"quanto/iotpocv1/test/integration/pages/Browser",
+		"quanto/iotpocv1/test/integration/pages/App"
 	], function (Opa5, Common) {
 	"use strict";
 	Opa5.extendConfig({
 		arrangements: new Common(),
-		viewNamespace: "opensap.manageproducts.view."
+		viewNamespace: "quanto.iotpocv1.view."
 	});
 
 	sap.ui.require([
-		"opensap/manageproducts/test/integration/WorklistJourney",
-		"opensap/manageproducts/test/integration/ObjectJourney",
-		"opensap/manageproducts/test/integration/NavigationJourney",
-		"opensap/manageproducts/test/integration/NotFoundJourney"
+		"quanto/iotpocv1/test/integration/WorklistJourney",
+		"quanto/iotpocv1/test/integration/ObjectJourney",
+		"quanto/iotpocv1/test/integration/NavigationJourney",
+		"quanto/iotpocv1/test/integration/NotFoundJourney"
 	], function () {
 		QUnit.start();
 	});

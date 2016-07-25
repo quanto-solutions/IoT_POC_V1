@@ -1,6 +1,6 @@
 sap.ui.define([
-		"opensap/manageproducts/controller/Worklist.controller",
-		"opensap/manageproducts/controller/BaseController",
+		"quanto/iotpocv1/controller/Worklist.controller",
+		"quanto/iotpocv1/controller/BaseController",
 		"sap/ui/base/ManagedObject",
 		"test/unit/helper/FakeI18nModel",
 		"sap/ui/thirdparty/sinon",

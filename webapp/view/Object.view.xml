@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="opensap.manageproducts.controller.Object"
+	controllerName="quanto.iotpocv1.controller.Object"
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
@@ -30,8 +30,8 @@
 				</attributes>
 			</ObjectHeader>
 
-		    <mvc:XMLView viewName="opensap.manageproducts.view.ProductDetails"/>
-		    <core:Fragment fragmentName="opensap.manageproducts.view.SupplierInfo" type="XML"/>
+		    <mvc:XMLView viewName="quanto.iotpocv1.view.ProductDetails"/>
+		    <core:Fragment fragmentName="quanto.iotpocv1.view.SupplierInfo" type="XML"/>
  		</semantic:content>
 
 		<semantic:sendEmailAction>

@@ -1,12 +1,12 @@
 sap.ui.define([
 		"sap/ui/core/UIComponent",
 		"sap/ui/Device",
-		"opensap/manageproducts/model/models",
-		"opensap/manageproducts/controller/ErrorHandler"
+		"quanto/iotpocv1/model/models",
+		"quanto/iotpocv1/controller/ErrorHandler"
 	], function (UIComponent, Device, models, ErrorHandler) {
 		"use strict";
 
-		return UIComponent.extend("opensap.manageproducts.Component", {
+		return UIComponent.extend("quanto.iotpocv1.Component", {
 
 			metadata : {
 				manifest: "json"

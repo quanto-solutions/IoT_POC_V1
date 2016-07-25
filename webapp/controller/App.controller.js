@@ -1,10 +1,10 @@
 sap.ui.define([
-		"opensap/manageproducts/controller/BaseController",
+		"quanto/iotpocv1/controller/BaseController",
 		"sap/ui/model/json/JSONModel"
 	], function (BaseController, JSONModel) {
 		"use strict";
 
-		return BaseController.extend("opensap.manageproducts.controller.App", {
+		return BaseController.extend("quanto.iotpocv1.controller.App", {
 
 			onInit : function () {
 				var oViewModel,

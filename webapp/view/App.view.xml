@@ -1,6 +1,6 @@
 <mvc:View
 	xmlns:mvc="sap.ui.core.mvc"
-	controllerName="opensap.manageproducts.controller.App"
+	controllerName="quanto.iotpocv1.controller.App"
 	displayBlock="true"
 	xmlns="sap.m">
 

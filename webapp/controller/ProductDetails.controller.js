@@ -1,10 +1,10 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"opensap/manageproducts/model/formatter"
+	"quanto/iotpocv1/model/formatter"
 ], function(Controller, formatter) {
 	"use strict";
 
-	return Controller.extend("opensap.manageproducts.controller.ProductDetails", {
+	return Controller.extend("quanto.iotpocv1.controller.ProductDetails", {
 
 		formatter: formatter,
 

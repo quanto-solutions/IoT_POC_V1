@@ -1,5 +1,5 @@
 sap.ui.define([
-		"opensap/manageproducts/model/formatter"
+		"quanto/iotpocv1/model/formatter"
 	], function (formatter) {
 		"use strict";
 

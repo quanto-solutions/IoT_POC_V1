@@ -1,13 +1,13 @@
 sap.ui.define([
-		"opensap/manageproducts/controller/BaseController",
+		"quanto/iotpocv1/controller/BaseController",
 		"sap/ui/model/json/JSONModel",
-		"opensap/manageproducts/model/formatter",
+		"quanto/iotpocv1/model/formatter",
 		"sap/ui/model/Filter",
 		"sap/ui/model/FilterOperator"
 	], function (BaseController, JSONModel, formatter, Filter, FilterOperator) {
 		"use strict";
 
-		return BaseController.extend("opensap.manageproducts.controller.Worklist", {
+		return BaseController.extend("quanto.iotpocv1.controller.Worklist", {
 
 			formatter: formatter,
 
@@ -192,7 +192,7 @@ sap.ui.define([
 			_getPopover : function () {
 				// create dialog lazily via fragment factory
 				if (!this._oPopover) {
-					this._oPopover = sap.ui.xmlfragment("opensap.manageproducts.view.DetailPopover", this);
+					this._oPopover = sap.ui.xmlfragment("quanto.iotpocv1.view.DetailPopover", this);
 					this.getView().addDependent(this._oPopover);
 				}
 				return this._oPopover;

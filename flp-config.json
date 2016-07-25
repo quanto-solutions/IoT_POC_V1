@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "IoT_POC_V1",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/webapp",
+        "appUrl": "#IoT_POC_V1-Display",
+        "navigationComponentName": "quanto.iotpocv1",
+        "intentSemanticObject": "IoT_POC_V1",
+        "intentAction": "Display",
+        "html5ApplicationName": "iotpocv1",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "00000000-0000-1111-0000-00000000"
+        ],
+        "contentPackages": [
+            "00000000-0000-2222-0000-00000000"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "IoT POC",
+        "subtitle": "demo of live data from sensors",
+        "searchKeywords": "IoT POC,demo of live data from sensors",
+        "displayIconUrl": "sap-icon://globe",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
