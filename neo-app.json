@@ -43,6 +43,15 @@
         "name": "ES4"
       },
       "description": "ES4"
+    },
+    {
+      "path": "/devices",
+      "target": {
+        "type": "destination",
+        "name": "RHCloud_JSON",
+        "entryPath": "/devices"
+      },
+      "description": "RHCloud_JSON"
     }
   ],
   "cacheControl": [

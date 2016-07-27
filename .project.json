@@ -1,10 +1,10 @@
 {
   "translation": {
     "translationDomain": "",
-    "supportedLanguages": "",
-    "defaultLanguage": "",
-    "defaultI18NPropertyFile": "",
-    "resourceModelName": ""
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
   },
   "hcpdeploy": {
     "account": "s0015485288trial",

@@ -12,9 +12,12 @@ sap.ui.define([
 			formatter: formatter,
 
 			_mFilters: {
-				cheap: [new sap.ui.model.Filter("Price", "LT", 100)],
-				moderate: [new sap.ui.model.Filter("Price", "BT", 100, 1000)],
-				expensive: [new sap.ui.model.Filter("Price", "GT", 1000)]
+				all: [new sap.ui.model.Filter("Price", "GT", -1)],
+				temperature: [new sap.ui.model.Filter("Price", "LT", 100)],
+				smartmeter: [new sap.ui.model.Filter("Price", "BT", 100, 1000)],
+				airpoll: [new sap.ui.model.Filter("Price", "GT", 1000)],
+				assettracking: [new sap.ui.model.Filter("Price", "GT", 1000)],
+				perimeter: [new sap.ui.model.Filter("Price", "GT", 1000)]
 			},
 
 			/* =========================================================== */
@@ -47,9 +50,12 @@ sap.ui.define([
 					shareSendEmailMessage: this.getResourceBundle().getText("shareSendEmailWorklistMessage", [location.href]),
 					tableNoDataText : this.getResourceBundle().getText("tableNoDataText"),
 					tableBusyDelay : 0,
-					cheap: 0,
-					moderate: 0,
-					expensive: 0
+					all: 0,
+					temperature: 0,
+					smartmeter: 0,
+					airpoll: 0,
+					assettracking: 0,
+					perimeter: 0
 				});
 				this.setModel(oViewModel, "worklistView");
 

@@ -27,6 +27,11 @@ sap.ui.define([
 
 				// apply content density mode to root view
 				this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
+				
+				// JSON Modell von der RHC wird hier angebunden
+				var oModel = new sap.ui.model.json.JSONModel("/devices");
+				//this.setModel(oModel, "allSensors");
+				sap.ui.getCore().setModel(oModel, "allSensors");
 			}
 		});
 
