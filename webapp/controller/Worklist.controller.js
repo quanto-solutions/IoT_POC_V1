@@ -12,12 +12,12 @@ sap.ui.define([
 			formatter: formatter,
 
 			_mFilters: {
-				all: [new sap.ui.model.Filter("Price", "GT", -1)],
-				temperature: [new sap.ui.model.Filter("Price", "LT", 100)],
-				smartmeter: [new sap.ui.model.Filter("Price", "BT", 100, 1000)],
-				airpoll: [new sap.ui.model.Filter("Price", "GT", 1000)],
-				assettracking: [new sap.ui.model.Filter("Price", "GT", 1000)],
-				perimeter: [new sap.ui.model.Filter("Price", "GT", 1000)]
+				all: [],
+				temperature: [new sap.ui.model.Filter("address", "Contains", "4")],
+				smartmeter: [new sap.ui.model.Filter("address", "Contains", "9")],
+				airpoll: [new sap.ui.model.Filter("address", "Contains", "v")],
+				assettracking: [new sap.ui.model.Filter("address", "Contains", "ff")],
+				perimeter: [new sap.ui.model.Filter("address", "Contains", "6")]
 			},
 
 			/* =========================================================== */
@@ -85,7 +85,7 @@ sap.ui.define([
 				if (oFilter) {
 					oBinding.filter(oFilter);		   		   	
 				} else {
-					oBinding.filter([]);	
+					oBinding.filter([]);
 				}
 			},
 
@@ -111,7 +111,7 @@ sap.ui.define([
 					sTitle = this.getResourceBundle().getText("worklistTableTitleCount", [iTotalItems]);
 					// iterate the filters and request the count from the server
 					jQuery.each(this._mFilters, function (sFilterKey, oFilter) {
-						oModel.read("/ProductSet/$count", {
+						oModel.read("allSensors>/$count", {
 							filters: oFilter,
 							success: function (oData) {
 								var sPath = "/" + sFilterKey;
@@ -216,7 +216,7 @@ sap.ui.define([
 			 */
 			_showObject : function (oItem) {
 				this.getRouter().navTo("object", {
-					objectId: oItem.getBindingContext().getProperty("ProductID")
+					objectId: oItem.getBindingContext().getProperty("address")
 				});
 			},
 

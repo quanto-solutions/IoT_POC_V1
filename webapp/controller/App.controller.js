@@ -30,8 +30,8 @@ sap.ui.define([
 				
 				// JSON Modell von der RHC wird hier angebunden
 				var oModel = new sap.ui.model.json.JSONModel("/devices");
-				//this.setModel(oModel, "allSensors");
-				sap.ui.getCore().setModel(oModel, "allSensors");
+				this.setModel(oModel, "allSensors");
+				//sap.ui.getCore().setModel(oModel, "allSensors");
 			}
 		});
 
