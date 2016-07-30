@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="quanto.iotpocv1.controller.ProductDetails"
+	controllerName="quanto.iotpocv1.controller.Details"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:form="sap.ui.layout.form">

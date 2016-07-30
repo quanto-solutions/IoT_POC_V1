@@ -30,8 +30,8 @@
 				</attributes>
 			</ObjectHeader>
 
-		    <mvc:XMLView viewName="quanto.iotpocv1.view.ProductDetails"/>
-		    <core:Fragment fragmentName="quanto.iotpocv1.view.SupplierInfo" type="XML"/>
+		    <mvc:XMLView viewName="quanto.iotpocv1.view.Details"/>
+		    <core:Fragment fragmentName="quanto.iotpocv1.view.Info" type="XML"/>
  		</semantic:content>
 
 		<semantic:sendEmailAction>

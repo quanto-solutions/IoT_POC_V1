@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Controller, formatter) {
 	"use strict";
 
-	return Controller.extend("quanto.iotpocv1.controller.ProductDetails", {
+	return Controller.extend("quanto.iotpocv1.controller.Details", {
 
 		formatter: formatter,
 
